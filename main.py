@@ -53,7 +53,7 @@ class xthor(TorrentProvider, MovieProvider):
 
     urls = {
         'test' : 'https://xthor.bz',
-        'api' : 'https://api/xthor.bz?passkey=%s&search=%s'
+        'api' : 'https://api/xthor.bz?passkey=%s&search=%s',
         'login' : 'https://www.t411.ai/users/login/',
         'login_check': 'https://www.t411.ai',
         'detail': 'https://www.t411.ai/torrents/?id=%s',
