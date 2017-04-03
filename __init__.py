@@ -31,19 +31,19 @@ config = [{
                     'description': 'Will ignore result if not in freeleech',
                 },                
                 {
-                    'name': 'ignore_year',
-                    'label': 'ignore year',
-                    'default': 0,
-                    'type': 'bool',
-                    'description': 'Will ignore the year in the search results',
-                },
-                {
                     'name': 'multi',
                     'label': 'ignore lang in multi',
                     'default': 0,
                     'type': 'bool',
                     'description': 'Will ignore "french" and "truefrench" if "multi" is detected',
 
+                },
+                {
+                    'name': 'min_seeders',
+                    'label': 'Minimum Seeders',
+                    'default': 1,
+                    'type': 'int',
+                    'description': 'Minimum number of seeders to accept result',
                 },
                 {
                     'name': 'seed_ratio',
