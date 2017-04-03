@@ -24,6 +24,13 @@ config = [{
                     'default': '',
                 },
                 {
+                    'name': 'freeleech',
+                    'label': 'freeleech only',
+                    'default': 0,
+                    'type': 'bool',
+                    'description': 'Will ignore result if not in freeleech',
+                },                
+                {
                     'name': 'ignore_year',
                     'label': 'ignore year',
                     'default': 0,
