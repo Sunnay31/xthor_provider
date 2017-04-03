@@ -71,9 +71,7 @@ class xthor(TorrentProvider, MovieProvider):
                             'url': torrent['download_link'],
                             'detail_url': self.urls['permalink'] % (torrent['id']),
                             'id': torrent['id'],
-                            'size': torrent['size'],
-                            'score': '',
-                            'date': torrent['added'],
+                            'size': str(int(torrent['size']) / 1048576),
                     })
             except:
                 log.error('Failed getting results from %s: %s', (self.getName(), traceback.format_exc()))
